@@ -44,7 +44,7 @@ router.get('/preference/download', async (req, res) => {
 
     const normalizedYear = year.trim(); // clean any white space
     const preferences = await GuidePreference.find({ academicYear: normalizedYear });
-    console.log("Fetched preferences:", preferences);
+   
 
     // Group by domain
     const grouped = {};
